@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gloria Bae</title>
+  <meta name="description" content="Gloria Bae – offline stock and sales manager for a grocery tuck shop.">
+  <meta name="theme-color" content="#6e142d">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="icons/icon-192.png" alt="" class="logo">
+    <div>
+      <h1 id="shopTitle">Gloria Bae</h1>
+      <p class="sub" id="pageTitle">Dashboard</p>
+    </div>
+  </header>
+
+  <main id="view" aria-live="polite"></main>
+
+  <nav class="tabs">
+    <button data-tab="dashboard" class="active"><span class="ic">▦</span>Home</button>
+    <button data-tab="sell"><span class="ic">＋</span>Sell</button>
+    <button data-tab="stock"><span class="ic">▤</span>Stock</button>
+    <button data-tab="sales"><span class="ic">≡</span>Sales</button>
+    <button data-tab="more"><span class="ic">⋯</span>More</button>
+  </nav>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="sheet" id="modalBody"></div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="library.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
